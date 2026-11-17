@@ -1,6 +1,6 @@
 # Jenkins Day 4 – Master and Slave Architecture
 
-## 1. Jenkins Service Troubleshooting After an EC2 Restart
+## 1. Jenkins Service After an EC2 Restart
 
 When Jenkins is installed on an EC2 instance, the Jenkins service runs in the background. The Jenkins dashboard is commonly accessed using:
 
