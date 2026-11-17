@@ -24,7 +24,7 @@ A cron schedule runs a Jenkins job at a configured time without someone manually
 
 ### 2.1 Practical scenario: Generate a WAR file while away
 
-Imagine tomorrow is Saturday and you have planned to watch a movie. Your company asks you to generate a WAR file from the application at 11:00 AM. You do not need to sit in front of your laptop and click **Build Now** at that time. Configure Jenkins in advance, and Jenkins will execute the configured build steps according to the schedule.
+Imagine tomorrow is weekend for you and you have planned to watch a movie. Your company asks you to generate a WAR file from the application at 11:00 AM. You do not need to sit in front of your laptop and click **Build Now** at that time. Configure Jenkins in advance, and Jenkins will execute the configured build steps according to the schedule.
 
 ### 2.2 Five-field cron syntax
 
