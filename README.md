@@ -1,15 +1,103 @@
 # Jenkins Notes
 
-A growing collection of notes for learning Jenkins and CI/CD.
+A structured collection of my Jenkins learning notes, CI/CD concepts, practical examples, commands and troubleshooting points.
 
-## Notes
+## Learning Progress
 
-- [Jenkins Day 1 – Fundamentals, CI/CD, Installation and First CI Job](Jenkins-Day-1.md) — Jenkins fundamentals, CI/CD concepts, Ubuntu and Amazon Linux installation, and a first Freestyle CI job.
-- [Jenkins Day 2 – Job Parameters, Build Management and Administration](Jenkins-Day-2.md) — Job parameters, Java and Maven tools, concurrent builds, service administration, configuration recovery, and RBAC.
-- [Jenkins Day 3 – Build Triggers, Scheduling and Workspace](Jenkins-Day-3.md) — Cron scheduling, Poll SCM, GitHub webhooks, build throttling, remote build triggers, and Jenkins workspace.
-- [Jenkins Day 4 – Master and Slave Architecture](Jenkins-Day-4.md) — Jenkins controller and agent architecture, EC2 agent configuration, executors and labels, agent troubleshooting, node monitoring, disk-space management, linked jobs, and SonarQube introduction.
-- [Jenkins Day 5 – Jenkins Pipeline](Jenkins-Day-5.md) — Pipeline fundamentals, Groovy-based DSL, Scripted and Declarative Pipelines, stages and steps, GitHub checkout, Maven build execution, Pipeline as Code, Jenkinsfile, agent selection, workspace verification, and troubleshooting.
+### Day 1 – Jenkins Fundamentals, CI/CD and First CI Job
+
+[Read Jenkins Day 1 Notes](Jenkins-Day-1.md)
+
+Covered topics:
+
+- Introduction to Jenkins and its role in CI/CD
+- Continuous Integration and Continuous Delivery/Deployment
+- Understanding DEV, QA, UAT and PROD environments
+- Jenkins installation and initial configuration on AWS EC2
+- Jenkins dashboard and initial administrator setup
+- Freestyle jobs and build configuration
+- Connecting a Jenkins job to a Git repository
+- Maven build execution using `mvn clean package`
+- Jenkins workspace, build output and generated artifacts
+- Manual build triggering and basic CI workflow
+
+### Day 2 – Job Parameters, Build Management and Administration
+
+[Read Jenkins Day 2 Notes](Jenkins-Day-2.md)
+
+Covered topics:
+
+- Parameterized Freestyle jobs and build-time inputs
+- Configuring jobs for different application examples
+- Maven job configuration and tool integration
+- Changing the Jenkins service port
+- Executors and concurrent build execution
+- Jenkins service management and troubleshooting
+- EC2 stop/start behaviour and public IP changes
+- Elastic IP and stable server access
+- Job configuration recovery using Job Configuration History
+- Introduction to Jenkins role-based access control (RBAC)
+- Jenkins scripts and configuration files
+
+### Day 3 – Build Triggers, Scheduling and Workspace
+
+[Read Jenkins Day 3 Notes](Jenkins-Day-3.md)
+
+Covered topics:
+
+- Jenkins build triggers and scheduling
+- Cron syntax and scheduled builds
+- Poll SCM and periodic source-code checks
+- GitHub webhook integration for push events
+- Difference between Poll SCM and webhook-based triggering
+- Throttle Concurrent Builds and build concurrency
+- Remote build triggering and authentication considerations
+- Jenkins workspace and build execution flow
+
+### Day 4 – Jenkins Controller and Agent Architecture
+
+[Read Jenkins Day 4 Notes](Jenkins-Day-4.md)
+
+Covered topics:
+
+- Jenkins controller and agent architecture (formerly Master and Slave)
+- Distributed builds using AWS EC2 instances
+- SSH connectivity and agent prerequisites
+- Java runtime requirements for Jenkins agents
+- Configuring agents, executors and labels
+- Assigning jobs to specific agents
+- Installing Git, Maven and required tools on agents
+- Running a Freestyle job on an agent
+- Agent monitoring and troubleshooting
+- Workspace and disk-space management
+- Linking Jenkins jobs and understanding downstream execution
+- Introduction to SonarQube and code quality analysis
+
+### Day 5 – Jenkins Pipeline and Pipeline as Code
+
+[Read Jenkins Day 5 Notes](Jenkins-Day-5.md)
+
+Covered topics:
+
+- Jenkins Pipeline fundamentals and terminology
+- Scripted Pipeline and Declarative Pipeline
+- Declarative Pipeline structure: `pipeline`, `agent`, `stages`, `stage` and `steps`
+- Creating and executing a basic Pipeline
+- Running Linux commands through Pipeline `sh` steps
+- Single-stage and multi-stage Pipelines
+- Connecting Pipeline jobs to GitHub repositories
+- Using the Pipeline Syntax Generator
+- Integrating Maven build commands into a Pipeline
+- Pipeline as Code and the purpose of a `Jenkinsfile`
+- Executing multiple commands in a Pipeline step
+- Selecting Jenkins agents using `agent any` and labels
+- Agent execution, Java compatibility and workspace verification
+- Understanding the end-to-end Jenkins Pipeline workflow
 
 ## Additional Learning Resource
 
-- [SonarQube for DevOps](https://github.com/CloudWithVarJosh/SonarQube-For-DevOps) — Additional reference for SonarQube, code quality analysis, SAST, SCA, Quality Gates, and DevSecOps integration.
+- [SonarQube for DevOps](https://github.com/CloudWithVarJosh/SonarQube-For-DevOps) — Additional learning resource for code quality, static analysis and DevSecOps integration.
+
+## Learning Approach
+
+These notes are organized by learning day and focus on understanding Jenkins through CI/CD concepts, practical job configuration, Pipeline execution, distributed build scenarios and troubleshooting. The examples build a foundation for automating application builds and integrating quality checks into DevOps workflows.
