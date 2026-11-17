@@ -94,10 +94,32 @@ Covered topics:
 - Agent execution, Java compatibility and workspace verification
 - Understanding the end-to-end Jenkins Pipeline workflow
 
+### Day 6 – Pipeline Variables, Post-Build Actions and RBAC
+
+[Read Jenkins Day 6 Notes](Jenkins-Day-6.md)
+
+Covered topics:
+
+- Understanding Groovy variables and Pipeline environment variables
+- Pipeline-level and stage-level environment variable scopes
+- Jenkins-provided variables such as `BUILD_NUMBER`, `JOB_NAME` and `WORKSPACE`
+- Using build numbers to identify generated artifacts
+- Declarative Pipeline `post` section
+- `always`, `success` and `failure` post conditions
+- Pipeline-level and stage-level post actions
+- Troubleshooting runtime failures versus Pipeline syntax failures
+- Jenkins authentication and authorization
+- Role-Based Authorization Strategy plugin
+- Global roles, item roles and agent roles
+- Managing permissions for Fresher, Developer and Administrator roles
+- Reusing roles when new employees join
+- Least Privilege and Jenkins access control
+- Jenkins service startup using modern `systemctl` commands
+
 ## Additional Learning Resource
 
 - [SonarQube for DevOps](https://github.com/CloudWithVarJosh/SonarQube-For-DevOps) — Additional learning resource for code quality, static analysis and DevSecOps integration.
 
 ## Learning Approach
 
-These notes are organized by learning day and focus on understanding Jenkins through CI/CD concepts, practical job configuration, Pipeline execution, distributed build scenarios and troubleshooting. The examples build a foundation for automating application builds and integrating quality checks into DevOps workflows.
+These notes are organized by learning day and focus on understanding Jenkins through CI/CD concepts, practical job configuration, Pipeline execution, distributed build scenarios, access management and troubleshooting. The examples build a foundation for automating application builds and integrating quality checks into DevOps workflows.
